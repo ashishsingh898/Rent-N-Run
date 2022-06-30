@@ -1,0 +1,48 @@
+﻿@model RentNRunLib.Signin;
+
+<html>
+    <head>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/Signin.css" />
+        <link rel="stylesheet" href="~/css/Home.css" />
+        <link rel="stylesheet" href="~/fontawesome/css/all.css" />
+    </head>
+    
+    <body>
+        <div class="login-form">
+            <form method="post" >
+                
+                <h1>SignIn</h1>
+                
+                    <div class="content">
+                    <div class="input-field">
+                        <font color="black" size=5><i class="fa-solid fa-user"></i></font>
+                        <input type="text" asp-for="Email" placeholder="Email" name="t1">
+                        <span style="color:red;" asp-validation-for="Email"></span> <br />
+                        <div style="background-color: beige;color:red"></div>
+                    </div>
+                    
+                    <div class="input-field">
+                        <font color="black" size=5><i class="fa-solid fa-lock"></i> </font>
+                        <input type="password" asp-for="Password" placeholder="Password" name="t2">
+                        <span style="color:red;" asp-validation-for="Password"></span> <br />
+                        <div style="background-color: beige;color:red"></div>
+                    </div>
+                    
+                    <a routerLink = "/Signin" class="link">Forgot Your Password?</a>
+
+                    <div class="action">
+                        <input type="submit" value="Signin" class="button">
+                    </div>
+                    <div style="color:red; font-size:20px; text-align:center;">
+                        @ViewData["a"]
+                        </div>
+                </div>
+                
+            </form>
+            
+        </div>
+        
+    </body>
+
+</html>

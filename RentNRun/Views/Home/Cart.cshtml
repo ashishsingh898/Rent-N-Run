@@ -1,0 +1,22 @@
+﻿@model RentNRunLib.Car;
+<div class="row">
+ @if(Model!=null)
+ {
+        
+            <div class="col-sm-4">   
+                <div class="card">
+                     <img src="~/@Model.Images" class = "gg" >
+                    <div class="container">
+
+            <div style="font-size:30px;"><b>@Model.Model</b></div>
+            <div style="font-size:20px;">(@Model.ModelYear)</div>
+            <div style="font-size:20px;">Color: @Model.Color</div>
+            <div style="font-size:20px;">Seats: @Model.NumberOfPersons</div>
+            <div style="color:red"><b>Rent: ₹@Model.DailyRent/day</b></div>
+                    </div>         
+                </div>
+            </div>
+ }
+<a asp-action="BOOKING" class="btn btn-info">BookNow</a><br/>
+
+  </div>

@@ -1,0 +1,12 @@
+D:\RentNRun\RentNRun\ClassLibrary1\bin\Debug\net6.0\ClassLibrary1.deps.json
+D:\RentNRun\RentNRun\ClassLibrary1\bin\Debug\net6.0\ClassLibrary1.dll
+D:\RentNRun\RentNRun\ClassLibrary1\bin\Debug\net6.0\ClassLibrary1.pdb
+D:\RentNRun\RentNRun\ClassLibrary1\obj\Debug\net6.0\ClassLibrary1.csproj.AssemblyReference.cache
+D:\RentNRun\RentNRun\ClassLibrary1\obj\Debug\net6.0\ClassLibrary1.GeneratedMSBuildEditorConfig.editorconfig
+D:\RentNRun\RentNRun\ClassLibrary1\obj\Debug\net6.0\ClassLibrary1.AssemblyInfoInputs.cache
+D:\RentNRun\RentNRun\ClassLibrary1\obj\Debug\net6.0\ClassLibrary1.AssemblyInfo.cs
+D:\RentNRun\RentNRun\ClassLibrary1\obj\Debug\net6.0\ClassLibrary1.csproj.CoreCompileInputs.cache
+D:\RentNRun\RentNRun\ClassLibrary1\obj\Debug\net6.0\ClassLibrary1.dll
+D:\RentNRun\RentNRun\ClassLibrary1\obj\Debug\net6.0\refint\ClassLibrary1.dll
+D:\RentNRun\RentNRun\ClassLibrary1\obj\Debug\net6.0\ClassLibrary1.pdb
+D:\RentNRun\RentNRun\ClassLibrary1\obj\Debug\net6.0\ref\ClassLibrary1.dll

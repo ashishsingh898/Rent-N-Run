@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 500px;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="column">
+    <img src="~/Images/img9.jpg" style="width:100%; height:500px;">
+  </div>
+  <div class="column">
+    <img src="~/Images/img10.jpg" style="width:100%; height:500px;">
+  </div>
+  <div class="column">
+    <img src="~/Images/img6s.jpg" style="width:100%; height:500px;">
+  </div>
+
+  <div class="column">
+    <img src="~/Images/img5.jpeg" style="width:100%; height:500px;">
+  </div>
+  <div class="column">
+    <img src="~/Images/img1.jpeg" style="width:100%; height:500px;">
+  </div>
+  <div class="column">
+    <img src="~/Images/img13.jpg" style="width:100%; height:500px;">
+  </div>
+</div>
+
+</body>
+</html>

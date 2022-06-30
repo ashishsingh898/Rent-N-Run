@@ -1,0 +1,81 @@
+﻿@model RentNRunLib.Contactus;
+
+<html>
+    <head>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/contact.css" />
+        <link rel="stylesheet" href="~/css/Home.css" />
+    </head>
+ 
+<body>
+        
+    <div class="ScriptTop">
+        <div class="rt-container">
+            <div class="col-rt-4" id="float-right"></div>
+            <div class="col-rt-2"></div>
+        </div>
+    </div>
+    
+  
+  <section>
+      <div class="rt-container">
+            <div class="col-rt-12">
+                <div class="Scriptcontent">
+                
+                 <div>
+              <div class="container">
+                  <div class="contact-parent">
+                      <div class="contact-child child1">
+                          <p15>
+                              <i class="fas fa-map-marker-alt"></i> Address <br />
+                              <span>
+                                  Pune,INDIA
+                              </span>
+                          </p15>
+  
+                          <p15>
+                              <i class="fas fa-phone-alt"></i> Let's Talk <br />
+                              <span>9999999999</span>
+                          </p15>
+  
+                          <p15>
+                              <i class=" far fa-envelope"></i> Email <br />
+                              <span>info@rentnrun.com</span>
+                          </p15>
+                      </div>
+  
+                      <div class="contact-child child2">
+
+                          <div class="inside-contact">
+                          <form method="post">
+                              <h2>Contact Us</h2>
+                              
+                              <p15>Your Name </p15>
+                              <input type="text" asp-for=Name Required="required">
+  
+                              <p15>Your Email </p15>
+                              <input type="email" asp-for=Email Required="required">
+  
+                              <p15>Subject </p15>
+                              <input type="text" asp-for=Subjects Required="required">
+  
+                              <p15>Message </p15>
+                              <input type="text" asp-for=Message rows="4" cols="20" Required="required" >
+                              
+                              <input type="submit" name="submit" id="submit" value="SEND MASSAGE">
+                              <div style="color:red; font-size:20px; text-align:center;">
+                                  @ViewData["a"]
+ 
+                              </div>
+                          </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div> 
+</section>
+</body>
+</html>

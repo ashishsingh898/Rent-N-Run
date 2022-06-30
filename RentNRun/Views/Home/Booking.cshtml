@@ -1,0 +1,31 @@
+﻿<div class="row">
+ @if(Model!=null)
+ {
+        
+            <div class="col-sm-4">   
+                <div class="card">
+                     <img src="~/@Model.Images" class = "gg" >
+                    <div class="container">
+
+            <div style="font-size:30px;"><b>@Model.Model</b></div>
+            <div style="font-size:20px;">(@Model.ModelYear)</div>
+            <div style="font-size:20px;">Color: @Model.Color</div>
+            <div style="font-size:20px;">Seats: @Model.NumberOfPersons</div>
+            <div style="color:red"><b>Rent: ₹@Model.DailyRent/day</b></div>
+                    </div>         
+                </div>
+            </div>
+ }
+    
+  </div>
+
+<form method="post">
+  
+   <label>FromDate</label> <input type="date" name="Fromdate"  class="form-control" required/><br />
+   <label>ReturnDate</label><input type="date" name="Returndate" class="form-control" required/><br />
+   <label>Per Day Amount</label><input type="number" name="Amount"class="form-control" value="@Model.DailyRent" disabled="disabled"/><br />
+   <label>Amount</label><input type="number" name="Amount" /><br />
+   <input type="submit" value="Confirm Booking"  class="btn btn-info"/>
+
+</form>
+@ViewData["a"]

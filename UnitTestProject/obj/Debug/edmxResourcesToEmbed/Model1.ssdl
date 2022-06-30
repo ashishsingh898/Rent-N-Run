@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CAR_RENTModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="BOOKING">
+    <Key>
+      <PropertyRef Name="RENT_ID" />
+    </Key>
+    <Property Name="RENT_ID" Type="int" Nullable="false" />
+    <Property Name="CAR_ID" Type="int" />
+    <Property Name="EMAIL" Type="varchar" MaxLength="30" />
+    <Property Name="Orderdate" Type="date" />
+    <Property Name="FROM_DATE" Type="date" />
+    <Property Name="RETURN_DATE" Type="date" />
+    <Property Name="ACTUAL_RETURN_DATE" Type="date" />
+    <Property Name="AMOUNT" Type="float" />
+    <Property Name="LATE_FEE" Type="float" />
+    <Property Name="DISCOUNT" Type="float" />
+    <Property Name="TOTAL_AMOUNT" Type="float" />
+  </EntityType>
+  <EntityType Name="CAR">
+    <Key>
+      <PropertyRef Name="CAR_ID" />
+    </Key>
+    <Property Name="CAR_ID" Type="int" Nullable="false" />
+    <Property Name="MODEL" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="MODEL_YEAR" Type="int" Nullable="false" />
+    <Property Name="COLOR" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="NUMBER_OF_PERSONS" Type="int" Nullable="false" />
+    <Property Name="DAILY_RENT" Type="int" Nullable="false" />
+    <Property Name="IMAGES" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CART">
+    <Key>
+      <PropertyRef Name="CART_ID" />
+    </Key>
+    <Property Name="CART_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EMAIL" Type="varchar" MaxLength="30" />
+    <Property Name="CAR_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="CONTACTUS">
+    <Key>
+      <PropertyRef Name="CONTACTUS_ID" />
+    </Key>
+    <Property Name="CONTACTUS_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NAME" Type="varchar" MaxLength="30" />
+    <Property Name="EMAIL" Type="varchar" MaxLength="30" />
+    <Property Name="SUBJECTS" Type="varchar" MaxLength="30" />
+    <Property Name="MESSAGE" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="SIGNIN">
+    <Key>
+      <PropertyRef Name="LOGIN_ID" />
+    </Key>
+    <Property Name="LOGIN_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EMAIL" Type="varchar" MaxLength="30" />
+    <Property Name="PASSWORD" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="SIGNUP">
+    <Key>
+      <PropertyRef Name="EMAIL" />
+    </Key>
+    <Property Name="CUSTOMER_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NAME" Type="varchar" MaxLength="30" />
+    <Property Name="EMAIL" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="DATE_OF_BIRTH" Type="date" />
+    <Property Name="CONTACT_NUMBER" Type="char" MaxLength="10" />
+    <Property Name="CITY" Type="varchar" MaxLength="20" />
+    <Property Name="STATE" Type="varchar" MaxLength="20" />
+    <Property Name="ZIPCODE" Type="varchar" MaxLength="10" />
+    <Property Name="PASSWORD" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <Association Name="FK__BOOKING__CAR_ID__41B8C09B">
+    <End Role="CAR" Type="Self.CAR" Multiplicity="0..1" />
+    <End Role="BOOKING" Type="Self.BOOKING" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAR">
+        <PropertyRef Name="CAR_ID" />
+      </Principal>
+      <Dependent Role="BOOKING">
+        <PropertyRef Name="CAR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__BOOKING__EMAIL__42ACE4D4">
+    <End Role="SIGNUP" Type="Self.SIGNUP" Multiplicity="0..1" />
+    <End Role="BOOKING" Type="Self.BOOKING" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SIGNUP">
+        <PropertyRef Name="EMAIL" />
+      </Principal>
+      <Dependent Role="BOOKING">
+        <PropertyRef Name="EMAIL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CART__CAR_ID__0F2D40CE">
+    <End Role="CAR" Type="Self.CAR" Multiplicity="0..1" />
+    <End Role="CART" Type="Self.CART" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAR">
+        <PropertyRef Name="CAR_ID" />
+      </Principal>
+      <Dependent Role="CART">
+        <PropertyRef Name="CAR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CART__EMAIL__0E391C95">
+    <End Role="SIGNUP" Type="Self.SIGNUP" Multiplicity="0..1" />
+    <End Role="CART" Type="Self.CART" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SIGNUP">
+        <PropertyRef Name="EMAIL" />
+      </Principal>
+      <Dependent Role="CART">
+        <PropertyRef Name="EMAIL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CONTACTUS__EMAIL__318258D2">
+    <End Role="SIGNUP" Type="Self.SIGNUP" Multiplicity="0..1" />
+    <End Role="CONTACTUS" Type="Self.CONTACTUS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SIGNUP">
+        <PropertyRef Name="EMAIL" />
+      </Principal>
+      <Dependent Role="CONTACTUS">
+        <PropertyRef Name="EMAIL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__SIGNIN__EMAIL__0697FACD">
+    <End Role="SIGNUP" Type="Self.SIGNUP" Multiplicity="0..1" />
+    <End Role="SIGNIN" Type="Self.SIGNIN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SIGNUP">
+        <PropertyRef Name="EMAIL" />
+      </Principal>
+      <Dependent Role="SIGNIN">
+        <PropertyRef Name="EMAIL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CAR_RENTModelStoreContainer">
+    <EntitySet Name="BOOKING" EntityType="Self.BOOKING" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CAR" EntityType="Self.CAR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CART" EntityType="Self.CART" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CONTACTUS" EntityType="Self.CONTACTUS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SIGNIN" EntityType="Self.SIGNIN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SIGNUP" EntityType="Self.SIGNUP" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__BOOKING__CAR_ID__41B8C09B" Association="Self.FK__BOOKING__CAR_ID__41B8C09B">
+      <End Role="CAR" EntitySet="CAR" />
+      <End Role="BOOKING" EntitySet="BOOKING" />
+    </AssociationSet>
+    <AssociationSet Name="FK__BOOKING__EMAIL__42ACE4D4" Association="Self.FK__BOOKING__EMAIL__42ACE4D4">
+      <End Role="SIGNUP" EntitySet="SIGNUP" />
+      <End Role="BOOKING" EntitySet="BOOKING" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CART__CAR_ID__0F2D40CE" Association="Self.FK__CART__CAR_ID__0F2D40CE">
+      <End Role="CAR" EntitySet="CAR" />
+      <End Role="CART" EntitySet="CART" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CART__EMAIL__0E391C95" Association="Self.FK__CART__EMAIL__0E391C95">
+      <End Role="SIGNUP" EntitySet="SIGNUP" />
+      <End Role="CART" EntitySet="CART" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CONTACTUS__EMAIL__318258D2" Association="Self.FK__CONTACTUS__EMAIL__318258D2">
+      <End Role="SIGNUP" EntitySet="SIGNUP" />
+      <End Role="CONTACTUS" EntitySet="CONTACTUS" />
+    </AssociationSet>
+    <AssociationSet Name="FK__SIGNIN__EMAIL__0697FACD" Association="Self.FK__SIGNIN__EMAIL__0697FACD">
+      <End Role="SIGNUP" EntitySet="SIGNUP" />
+      <End Role="SIGNIN" EntitySet="SIGNIN" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

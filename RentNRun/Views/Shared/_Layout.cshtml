@@ -1,0 +1,122 @@
+﻿@using Microsoft.AspNetCore.Http
+
+<html>
+    <head>
+        <title>
+            RENT N' RUN
+        </title>
+        
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/Home.css" />
+        <link rel="stylesheet" href="~/fontawesome/css/all.css" />
+        
+    </head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="Home">Rent N' Run</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item"><a style="font-size: 17px;" asp-action="Home" class="nav-link">Home</a></li>
+                  <li class="nav-item"><a style="font-size: 17px;" asp-action="Cars" class="nav-link">Cars</a></li>
+                  <li class="nav-item"><a style="font-size: 17px;" asp-action="Services" class="nav-link">Services</a></li>
+                  <li class="nav-item"><a style="font-size: 17px;" asp-action="Contact" class="nav-link">Contact</a></li>
+                  <li class="nav-item"><a style="font-size: 17px;" asp-action="Signup" class="nav-link">SignUp</a></li>
+                  @if (Context.Session.GetString("Email") == null)
+                  {
+                      <li class="nav-item"><a style="font-size: 17px;" asp-action="Signin" class="nav-link">SignIn</a></li>
+                  }
+                  else
+                  {
+                      <li class="nav-item"><a style="font-size: 17px;" asp-action="Signout" class="nav-link">Signout</a></li>
+                  }
+                  <li class="nav-item"><a style="font-size: 17px;" asp-action="Booking" class="nav-link">Booking</a></li>
+              </ul>
+              
+          </div>
+          
+      </div>
+      
+  </nav>
+  
+  <div class="hero-wrap ftco-degree-bg" style="background-image: url('/images/bg.jpeg');" data-stellar-background-ratio="0.5">
+      <div class="overlay">
+          <div class="container"> 
+              <div class="row no-gutters slider-text justify-content-start align-items-center justify-content-center"></div>
+              
+          </div>
+          
+      </div>
+      
+  </div>
+
+  <article>
+      @RenderBody()
+  </article>
+  
+  <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2><a href="#" class="logo">Rent N' Ride</a></h2>
+              <p>Make Your Drive Best Is Our Responsibility.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li ><a href="#"><span class="fa-brands fa-twitter"></span></a></li>
+                <li><a href="#"><span class="fa-brands fa-facebook"></span></a></li>
+                <li><a href="#"><span class="fa-brands fa-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2>Information</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">About</a></li>
+                <li><a href="#" class="py-2 d-block">Services</a></li>
+                <li><a href="#" class="py-2 d-block">Term and Conditions</a></li>
+                <li><a href="#" class="py-2 d-block">Privacy &amp; Cookies Policy</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2>Customer Support</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">FAQ</a></li>
+                <li><a href="#" class="py-2 d-block">Payment Option</a></li>
+                <li><a href="#" class="py-2 d-block">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2>Have a Questions?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="fa-solid fa-location-dot"></span><span class="text">Pune,INDIA</span></li>
+	                <li><span class="fa-solid fa-phone"></span><span class="text">9999999999</span></li>
+	                <li><span class="fa-solid fa-at"></span><span class="text">info@rentnrun.com</span></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="cc">
+          <div class="col-md-12 text-center">
+            <p>Copyright &copy; All rights reserved</p>
+          </div>
+        </div>
+        
+    </footer>
+    
+</body>
+
+</html> 

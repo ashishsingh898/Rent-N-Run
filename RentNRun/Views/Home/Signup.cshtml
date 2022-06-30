@@ -1,0 +1,84 @@
+﻿@model RentNRunLib.Signup;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Sign Up</title>
+
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/Signup.css" />
+        <link rel="stylesheet" href="~/css/Home.css" />
+        <link rel="stylesheet" href="~/fontawesome/css/all.css" />
+</head>
+
+<body>
+
+    <div class="main" style="margin-bottom:100px;">
+        <section class="signup" style="background-image: url('/images/contactus.jpg');">
+            <div class="aw">
+                <div class="signup-content">
+                    <form method="post" id="signup-form" class="signup-form">
+                        <h3 class="form-title">CREATE ACCOUNT</h3>
+
+                        <div class="form-group">
+                            <input type="text" class="form-input" asp-for="Name" id="name" placeholder="Name"/>
+                            <span style="color:red;" asp-validation-for="Name"></span> <br />
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" class="form-input" asp-for="Email" id="email" placeholder="Email"/>
+                            <span style="color:red;" asp-validation-for="Email"></span> <br />
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="date" class="form-input" asp-for="DateOfBirth" id="dob" placeholder="Date Of Birth"/>
+                            <span style="color:red;" asp-validation-for="DateOfBirth" ></span> <br />
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" class="form-input" asp-for="ContactNumber" id="cn" placeholder="Contact Number"/>
+                            <span style="color:red;" asp-validation-for="ContactNumber"></span> <br />
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" class="form-input" asp-for="City" id="email" placeholder="City"/>
+                            <span style="color:red;" asp-validation-for="City"></span> <br />
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" class="form-input" asp-for="State" id="state" placeholder="State"/>
+                            <span style="color:red;" asp-validation-for="State"></span> <br />
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" class="form-input" asp-for="Zipcode" id="zipc" placeholder="Zipcode"/>
+                            <span style="color:red;" asp-validation-for="Zipcode"></span> <br />
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="password" class="form-input" asp-for="Password" id="password" placeholder="Password"/>
+                            <span style="color:red;" asp-validation-for="Password"></span> <br />
+                            <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
+                        </div>
+                        
+                       
+
+                        <div class="form-group">
+                            <input type="submit" name="submit" id="submit" class="form-submit" value="Sign up"/>
+                        </div>
+                        <div style="color:red; font-size:20px; text-align:center;">
+                            @ViewData["a"]
+                            </div>
+                    </form>
+                    <p class="loginhere">
+                        Have already an account ? <a asp-action="Signin" class="loginhere-link">Login here</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>

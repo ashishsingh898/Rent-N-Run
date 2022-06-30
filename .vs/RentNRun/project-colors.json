@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "c25f5b88-3de8-4467-a043-e39a14dc0092": {
+      "ProjectGuid": "c25f5b88-3de8-4467-a043-e39a14dc0092",
+      "DisplayName": "RentNRunLib",
+      "ColorIndex": 0
+    },
+    "2e02e205-aac7-48b5-9271-b5f19a7fdfdf": {
+      "ProjectGuid": "2e02e205-aac7-48b5-9271-b5f19a7fdfdf",
+      "DisplayName": "RentNRun",
+      "ColorIndex": 1
+    },
+    "07bd7686-2777-499d-b90b-9db6beda0e9f": {
+      "ProjectGuid": "07bd7686-2777-499d-b90b-9db6beda0e9f",
+      "DisplayName": "CarUnitTest",
+      "ColorIndex": 2
+    },
+    "578c0c55-4543-4863-810a-1d98a4df4edf": {
+      "ProjectGuid": "578c0c55-4543-4863-810a-1d98a4df4edf",
+      "DisplayName": "UnitTestProject1",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 4
+}

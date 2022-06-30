@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="954eb4124351485ab969a7ad90a24f77" Name="Diagram1">
+        <EntityTypeShape EntityType="CAR_RENTModel.BOOKING" Width="1.5" PointX="3" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CAR_RENTModel.CAR" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CAR_RENTModel.CART" Width="1.5" PointX="6" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CAR_RENTModel.CONTACTU" Width="1.5" PointX="3" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CAR_RENTModel.SIGNIN" Width="1.5" PointX="3" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CAR_RENTModel.SIGNUP" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <AssociationConnector Association="CAR_RENTModel.FK__BOOKING__CAR_ID__41B8C09B" ManuallyRouted="false" />
+        <AssociationConnector Association="CAR_RENTModel.FK__BOOKING__EMAIL__42ACE4D4" ManuallyRouted="false" />
+        <AssociationConnector Association="CAR_RENTModel.FK__CART__CAR_ID__0F2D40CE" ManuallyRouted="false" />
+        <AssociationConnector Association="CAR_RENTModel.FK__CART__EMAIL__0E391C95" ManuallyRouted="false" />
+        <AssociationConnector Association="CAR_RENTModel.FK__CONTACTUS__EMAIL__318258D2" ManuallyRouted="false" />
+        <AssociationConnector Association="CAR_RENTModel.FK__SIGNIN__EMAIL__0697FACD" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

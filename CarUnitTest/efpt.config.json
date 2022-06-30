@@ -1,0 +1,59 @@
+﻿{
+   "CodeGenerationMode": 2,
+   "ContextClassName": "CarrentContext1",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": true,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": null,
+   "ProjectRootNamespace": "CarUnitTest",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "Name": "[dbo].[BOOKING]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CAR]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CART]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CONTACTUS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SIGNIN]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SIGNUP]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": "LAPTOP-SPH65KIE\\SQLEXPRESS.CAR_RENT",
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": true,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoConstructor": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSpatial": false
+}

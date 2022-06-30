@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CAR_RENTModelStoreContainer" CdmEntityContainer="CAR_RENTEntities">
+    <EntitySetMapping Name="BOOKINGs">
+      <EntityTypeMapping TypeName="CAR_RENTModel.BOOKING">
+        <MappingFragment StoreEntitySet="BOOKING">
+          <ScalarProperty Name="RENT_ID" ColumnName="RENT_ID" />
+          <ScalarProperty Name="CAR_ID" ColumnName="CAR_ID" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="Orderdate" ColumnName="Orderdate" />
+          <ScalarProperty Name="FROM_DATE" ColumnName="FROM_DATE" />
+          <ScalarProperty Name="RETURN_DATE" ColumnName="RETURN_DATE" />
+          <ScalarProperty Name="ACTUAL_RETURN_DATE" ColumnName="ACTUAL_RETURN_DATE" />
+          <ScalarProperty Name="AMOUNT" ColumnName="AMOUNT" />
+          <ScalarProperty Name="LATE_FEE" ColumnName="LATE_FEE" />
+          <ScalarProperty Name="DISCOUNT" ColumnName="DISCOUNT" />
+          <ScalarProperty Name="TOTAL_AMOUNT" ColumnName="TOTAL_AMOUNT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CARs">
+      <EntityTypeMapping TypeName="CAR_RENTModel.CAR">
+        <MappingFragment StoreEntitySet="CAR">
+          <ScalarProperty Name="CAR_ID" ColumnName="CAR_ID" />
+          <ScalarProperty Name="MODEL" ColumnName="MODEL" />
+          <ScalarProperty Name="MODEL_YEAR" ColumnName="MODEL_YEAR" />
+          <ScalarProperty Name="COLOR" ColumnName="COLOR" />
+          <ScalarProperty Name="NUMBER_OF_PERSONS" ColumnName="NUMBER_OF_PERSONS" />
+          <ScalarProperty Name="DAILY_RENT" ColumnName="DAILY_RENT" />
+          <ScalarProperty Name="IMAGES" ColumnName="IMAGES" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CARTs">
+      <EntityTypeMapping TypeName="CAR_RENTModel.CART">
+        <MappingFragment StoreEntitySet="CART">
+          <ScalarProperty Name="CART_ID" ColumnName="CART_ID" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="CAR_ID" ColumnName="CAR_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CONTACTUS">
+      <EntityTypeMapping TypeName="CAR_RENTModel.CONTACTU">
+        <MappingFragment StoreEntitySet="CONTACTUS">
+          <ScalarProperty Name="CONTACTUS_ID" ColumnName="CONTACTUS_ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="SUBJECTS" ColumnName="SUBJECTS" />
+          <ScalarProperty Name="MESSAGE" ColumnName="MESSAGE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SIGNINs">
+      <EntityTypeMapping TypeName="CAR_RENTModel.SIGNIN">
+        <MappingFragment StoreEntitySet="SIGNIN">
+          <ScalarProperty Name="LOGIN_ID" ColumnName="LOGIN_ID" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SIGNUPs">
+      <EntityTypeMapping TypeName="CAR_RENTModel.SIGNUP">
+        <MappingFragment StoreEntitySet="SIGNUP">
+          <ScalarProperty Name="CUSTOMER_ID" ColumnName="CUSTOMER_ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="DATE_OF_BIRTH" ColumnName="DATE_OF_BIRTH" />
+          <ScalarProperty Name="CONTACT_NUMBER" ColumnName="CONTACT_NUMBER" />
+          <ScalarProperty Name="CITY" ColumnName="CITY" />
+          <ScalarProperty Name="STATE" ColumnName="STATE" />
+          <ScalarProperty Name="ZIPCODE" ColumnName="ZIPCODE" />
+          <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
