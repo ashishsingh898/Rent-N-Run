@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9lGYYz3FVW5G09KGReuOH1e7sueymttmQ1+H+tXE6n0=",
+  "Hash": "IQUPDfqfPZQjGVnKMwrkosgm3IuC2PCfb82+MsJXAIc=",
   "Source": "RentNRun",
   "BasePath": "_content/RentNRun",
   "Mode": "Default",
@@ -31331,6 +31331,23 @@
       "OriginalItemSpec": "wwwroot\\Images\\bg.jpeg"
     },
     {
+      "Identity": "D:\\RentNRun\\RentNRun\\RentNRun\\RentNRun\\wwwroot\\Images\\carrent.jpg",
+      "SourceId": "RentNRun",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\RentNRun\\RentNRun\\RentNRun\\RentNRun\\wwwroot\\",
+      "BasePath": "_content/RentNRun",
+      "RelativePath": "Images/carrent.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\carrent.jpg"
+    },
+    {
       "Identity": "D:\\RentNRun\\RentNRun\\RentNRun\\RentNRun\\wwwroot\\Images\\cdb.jpg",
       "SourceId": "RentNRun",
       "SourceType": "Discovered",
@@ -31771,6 +31788,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\img9.jpg"
+    },
+    {
+      "Identity": "D:\\RentNRun\\RentNRun\\RentNRun\\RentNRun\\wwwroot\\Images\\rost.jpg",
+      "SourceId": "RentNRun",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\RentNRun\\RentNRun\\RentNRun\\RentNRun\\wwwroot\\",
+      "BasePath": "_content/RentNRun",
+      "RelativePath": "Images/rost.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\rost.jpg"
     },
     {
       "Identity": "D:\\RentNRun\\RentNRun\\RentNRun\\RentNRun\\wwwroot\\Images\\services.jpg",
